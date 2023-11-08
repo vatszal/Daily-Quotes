@@ -6,10 +6,13 @@ body{
     background-image: url(58931.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 #dailyquotes{
 
-    background-color: black;
+    background-color: rgba(255, 0, 0, 0.2);
 display: flex;
     width:  1313px;
     height: 300px;
@@ -17,8 +20,12 @@ display: flex;
     margin-top: 167px;
     border-top-left-radius: 200px;
     border-bottom-right-radius: 200px;
-    margin-left:29px ;
-
+    border-color:white ;
+    border-width: 16px;
+    border-style: double;
+    border-left: none;
+    border-right: none;
+    
 }
 #samplequotes{
     font-size: 40px;
