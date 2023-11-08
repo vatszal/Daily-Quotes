@@ -1,6 +1,16 @@
-{"NAME" :"Daily quotes(by NIJJIL & VATSAL)",
-"version": "3.1.2.4567","manifest_version":3,"default_action":{ "default_popup":"popup.html","default_icon":"c.png"
-},
-"icons":{"128":"c.png"}
-,"permissions":""
+{
+    "manifest_version": 3,
+    "name": "Quote of the Day",
+    "author": "Nijjil Narula & Vatsal Mittal",
+    "version": "1.0",
+    "description": "Displays a daily inspirational or thought-provoking quote on the new tab page.",
+    "permissions": [
+        "activeTab"
+    ],
+    "icons": {
+        "128": "images/c.png"
+    },
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    }
 }
