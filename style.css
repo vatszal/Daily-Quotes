@@ -1,16 +1,18 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
 }
-body{
-    background-image: url(images/58931.jpg);
+
+body {
+    background-image: url(images/flower.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
 }
-#dailyquotes{
+
+.quotecontainer {
     background-color: rgba(255, 0, 0, 0.2);
     display: flex;
     width: 198vh;
@@ -30,11 +32,11 @@ body{
 }
 
 
-#samplequotes{
-    font-size: 4.6vh;
+.quotespace {
+    font-size: 4vh;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    background: url(images/istockphoto-1162167657-1024x1024.jpg);
+    background: url(images/flower-container.jpg);
     -webkit-background-clip: text;
     -webkit-text-stroke-color: rgb(0, 225, 255);
     -webkit-text-stroke-width: 0.1vh;
