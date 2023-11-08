@@ -11,30 +11,33 @@ body{
     display: flex;
 }
 #dailyquotes{
-
     background-color: rgba(255, 0, 0, 0.2);
-display: flex;
-    width:  1313px;
-    height: 300px;
+    display: flex;
+    width: 198vh;
+    height: 38vh;
     align-items: center;
-    margin-top: 167px;
-    border-top-left-radius: 200px;
-    border-bottom-right-radius: 200px;
-    border-color:white ;
-    border-width: 16px;
+    margin-top: 29.5vh;
+    border-top-left-radius: 76vh;
+    border-bottom-left-radius: 35vh;
+    border-color: white;
+    border-width: 3vh;
     border-style: double;
     border-left: none;
     border-right: none;
-    
+    border-top-right-radius: 26vh;
+    border-bottom-right-radius: 76vh;
+    padding: 5px;
 }
+
+
 #samplequotes{
-    font-size: 40px;
- -webkit-text-fill-color: transparent;
- text-align: center;
- background: url(images/istockphoto-1162167657-1024x1024.jpg);
- -webkit-background-clip: text;
- -webkit-text-stroke-color: rgb(0, 225, 255);
- -webkit-text-stroke-width: 0.2px;
- background-size: cover;
- background-repeat: no-repeat;
+    font-size: 4.6vh;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    background: url(images/istockphoto-1162167657-1024x1024.jpg);
+    -webkit-background-clip: text;
+    -webkit-text-stroke-color: rgb(0, 225, 255);
+    -webkit-text-stroke-width: 0.1vh;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
