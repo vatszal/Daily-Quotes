@@ -1,0 +1,6 @@
+{"NAME" :"Daily quotes(by NIJJIL & VATSAL)",
+"version": "3.1.2.4567","manifest_version":3,"default_action":{ "default_popup":"popup.html","default_icon":"c.png"
+},
+"icons":{"128":"c.png"}
+,"permissions":""
+}
