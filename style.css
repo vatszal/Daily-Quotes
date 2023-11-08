@@ -1,0 +1,27 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-image: url(58931.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#dailyquotes{
+
+    background-color: black;
+display: flex;
+    width:  1313px;
+    height: 300px;
+    align-items: center;
+    margin-top: 167px;
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    margin-left:29px ;
+
+}
+#samplequotes{
+    font-size: 40px;
+ -webkit-text-fill-color: aliceblue;
+ text-align: center;
+}
