@@ -61,4 +61,8 @@ const showTime= ()=>{
 
     timeformat.innerHTML = hr>12 ? "PM" : "AM";
 }
-
+let button =document.getElementById("btn");
+button.addEventListener("mouseover",themeshow);
+function themeshow(){
+    document.getElementById("theme").style.visibility="visible";
+}

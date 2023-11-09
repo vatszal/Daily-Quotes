@@ -20,7 +20,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     flex-direction: column;
-    row-gap: 5.5rem;
+    row-gap: 3.5rem;
 }
 
 /* clock css */
@@ -57,4 +57,44 @@ body{
 .quotespace{
     font-size: var(--font-size);
     color: var(--qtcolor);
+}
+/*navigation bar*/
+.arrow{
+    height:5vh ;
+    width: 6vh;
+    border: none;
+    transform: scaleX(-1);
+}
+.navbar{
+    margin: 0%;
+    padding: 0%;
+   justify-content: left;
+    display: flex;
+    width: 208vh;
+    height: 6vh;
+}
+#btn{
+    border: none;
+}
+
+#theme{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0vh;
+    visibility: hidden;
+    border-color: #e3e3e3;
+    border-style: double;
+    border-width: 10px;
+}
+    
+
+
+button{
+    border-left:#e3e3e3 10px double;
+    border-right:black 10px double;
+}
+#btn :hover{
+
 }
