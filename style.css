@@ -1,17 +1,41 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-:root{
-    --font-size : calc(6px + 1.4vw);
+:root {
+    --font-size: calc(6px + 1.4vw);
     --qtcolor: black;
     --clockcolor: black;
 }
 
-body{
+.light {
+    --font-size: calc(6px + 1.4vw);
+    --qtcolor: green;
+    --clockcolor: black;
+}
+
+.forest {
+    --font-size: calc(6px + 1.4vw);
+    --qtcolor: blue;
+    --clockcolor: black;
+}
+
+.ocean {
+    --font-size: calc(6px + 1.4vw);
+    --qtcolor: black;
+    --clockcolor: black;
+}
+
+.flower {
+    --font-size: calc(6px + 1.4vw);
+    --qtcolor: black;
+    --clockcolor: black;
+}
+
+body {
     display: flex;
     justify-content: stretch;
     align-items: center;
@@ -20,30 +44,30 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     flex-direction: column;
-    row-gap: 3.5rem;
+    row-gap: 4rem;
 }
 
 /* clock css */
-.clock{
+.clock {
     margin-top: 15vh;
     width: 100%;
     max-width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1), 0px 10px 10px rgba(0,0,0,0.7);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1), 0px 10px 10px rgba(0, 0, 0, 0.7);
     height: 24vh;
     border-radius: 12px;
     padding: 20px;
     color: var(--clockcolor);
 }
 
-.clock h1{
+.clock h1 {
     font-size: 3.5rem;
     font-weight: 600;
 }
 
-.clock span{
+.clock span {
     position: relative;
     top: -10%;
     margin-left: 5px;
@@ -54,47 +78,43 @@ body{
 
 /* quote css */
 
-.quotespace{
+.quotespace {
     font-size: var(--font-size);
     color: var(--qtcolor);
 }
+
 /*navigation bar*/
-.arrow{
-    height:5vh ;
+img {
+    height: 5vh;
     width: 6vh;
     border: none;
-    transform: scaleX(-1);
-}
-.navbar{
-    margin: 0%;
-    padding: 0%;
-   justify-content: left;
-    display: flex;
-    width: 208vh;
-    height: 6vh;
-}
-#btn{
-    border: none;
+    transition: 250ms ease-in-out;
 }
 
-#theme{
+img:hover {
+    transform: rotate(-90deg);
+    transition: transform 250ms ease-in-out;
+}
+
+nav {
+    margin: 0%;
+    padding: 0%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 0vh;
+    position: absolute;
+    left: 2vw;
+    top: 2vh;
+}
+
+#themes {
     visibility: hidden;
     border-color: #e3e3e3;
     border-style: double;
     border-width: 10px;
+    transition: 300ms ease-in-out;
 }
-    
 
-
-button{
-    border-left:#e3e3e3 10px double;
-    border-right:black 10px double;
-}
-#btn :hover{
-
+#themes button {
+    padding: 2px;
 }

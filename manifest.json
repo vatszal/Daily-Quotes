@@ -8,7 +8,7 @@
         "activeTab"
     ],
     "icons": {
-        "64": "images/icon2.png"
+        "64": "images/icon.png"
     },
     "chrome_url_overrides": {
         "newtab": "index.html"

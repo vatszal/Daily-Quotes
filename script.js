@@ -29,11 +29,9 @@ if (storedQuote) {
     const { quote, author } = JSON.parse(storedQuote);
     quoteText.innerHTML = `"${quote}" - ${author}`;
 } else {
-    // If there's no stored quote, fetch a new one and store it
     updateQuote();
 }
-
-// Set up a setInterval to update the quote every 24 hours (in milliseconds)
+//24 hours
 setInterval(updateQuote, 24 * 60 * 60 * 1000);
 
 
@@ -42,27 +40,72 @@ setInterval(updateQuote, 24 * 60 * 60 * 1000);
 const time = document.getElementById('time');
 const timeformat = document.getElementById('timeformat');
 
-document.addEventListener('DOMContentLoaded', ()=>{
+document.addEventListener('DOMContentLoaded', () => {
     setInterval(showTime, 1000);
 });
 
-const showTime= ()=>{
+const showTime = () => {
     let date = new Date();
 
     let hr = date.getHours();
     let min = date.getMinutes();
     let secs = date.getSeconds();
 
-    hr = hr<10 ? `0${hr}` : hr;
-    min = min<10 ? `0${min}` : min;
-    secs = secs<10 ? `0${secs}` : secs;
+    hr = hr < 10 ? `0${hr}` : hr;
+    min = min < 10 ? `0${min}` : min;
+    secs = secs < 10 ? `0${secs}` : secs;
 
     time.innerHTML = `${hr} : ${min} : ${secs}`;
 
-    timeformat.innerHTML = hr>12 ? "PM" : "AM";
+    timeformat.innerHTML = hr > 12 ? "PM" : "AM";
 }
-let button =document.getElementById("btn");
-button.addEventListener("mouseover",themeshow);
-function themeshow(){
-    document.getElementById("theme").style.visibility="visible";
+
+
+//themes change
+let arrow = document.getElementById("arrow");
+let themes = document.getElementById("themes");
+
+arrow.addEventListener("mouseover", show);
+themes.addEventListener("mouseover", show);
+
+function show() {
+    themes.style.visibility = "visible";
 }
+
+arrow.addEventListener("mouseout", hide);
+themes.addEventListener("mouseout", hide);
+
+function hide() {
+    themes.style.visibility = "hidden";
+}
+
+document.querySelector("#light").addEventListener('click', () => {
+    document.body.classList.remove("forest", "ocean", "flower");
+    document.body.classList.add('light');
+    document.body.style.backgroundImage = "url('')";
+})
+
+document.querySelector("#forest").addEventListener('click', () => {
+    document.body.classList.remove("flower", "light", "ocean");
+    document.body.classList.add('forest');
+    document.body.style.backgroundImage = "url('')";
+
+})
+
+document.querySelector("#ocean").addEventListener('click', () => {
+    document.body.classList.remove("forest", "flower", "light");
+    document.body.classList.add('ocean');
+    document.body.style.backgroundImage = "url('')";
+})
+
+document.querySelector("#flower").addEventListener('click', () => {
+    document.body.classList.remove("light", "ocean", "forest");
+    document.body.classList.add('flower');
+    document.body.style.backgroundImage = "url('')";
+})
+
+document.querySelector("#dark").addEventListener('click', () => {
+    document.body.classList.remove("forest","light","ocean","flower");
+    document.body.style.backgroundImage = "url('images/black.jpg')";
+
+})
