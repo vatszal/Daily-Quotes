@@ -9,31 +9,69 @@
     --font-size: calc(6px + 1.4vw);
     --qtcolor: black;
     --clockcolor: black;
+    --boxshadow1: rgba(0, 0, 0, 0.1);
+    --boxshadow2: rgba(0, 0, 0, 0.7);
+    --timesize: 3.5rem;
+    --clockmwidth: 400px;
+    --clockheight: 24vh;
+    --themes-head: black;
+    --imagebg: none;
+
 }
 
 .space {
     --font-size: calc(6px + 1.4vw);
-    --qtcolor: green;
-    --clockcolor: black;
-    
+    --qtcolor: white;
+    --clockcolor: white;
+    --boxshadow1: rgba(0, 0, 0, 0.1);
+    --boxshadow2: rgba(0, 0, 0, 0.7);
+    --timesize: 5.5rem;
+    --clockmwidth: 700px;
+    --clockheight: 24vh;
+    --themes-head: white;
+    --imagebg: white;
+
 }
 
 .forest {
     --font-size: calc(6px + 1.4vw);
-    --qtcolor: blue;
+    --qtcolor: black;
     --clockcolor: black;
+    --boxshadow1: rgba(0, 0, 0, 0.1);
+    --boxshadow2: rgba(0, 0, 0, 0.7);
+    --timesize: 3.5rem;
+    --clockmwidth: 400px;
+    --themes-head: black;
+    --imagebg: none;
+
 }
 
-.ocean {
+.sunset {
     --font-size: calc(6px + 1.4vw);
     --qtcolor: black;
     --clockcolor: black;
+    --boxshadow1: rgba(0, 0, 0, 0.1);
+    --boxshadow2: rgba(0, 0, 0, 0.7);
+    --timesize: 3.5rem;
+    --clockmwidth: 400px;
+    --clockheight: 24vh;
+    --themes-head: black;
+    --imagebg: none;
+
 }
 
 .flower {
     --font-size: calc(6px + 1.4vw);
     --qtcolor: black;
     --clockcolor: black;
+    --boxshadow1: rgba(0, 0, 0, 0.1);
+    --boxshadow2: rgba(0, 0, 0, 0.7);
+    --timesize: 3.5rem;
+    --clockmwidth: 400px;
+    --clockheight: 24vh;
+    --themes-head: black;
+    --imagebg: none;
+
 }
 
 body {
@@ -52,19 +90,19 @@ body {
 .clock {
     margin-top: 15vh;
     width: 100%;
-    max-width: 400px;
+    max-width: var(--clockmwidth);
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1), 0px 10px 10px rgba(0, 0, 0, 0.7);
-    height: 24vh;
+    box-shadow: 0px 0px 10px var(--boxshadow1), 0px 10px 10px var(--boxshadow2);
+    height: var(--clockheight);
     border-radius: 12px;
     padding: 20px;
     color: var(--clockcolor);
 }
 
 .clock h1 {
-    font-size: 3.5rem;
+    font-size: var(--timesize);
     font-weight: 600;
 }
 
@@ -90,6 +128,9 @@ img {
     width: 6vh;
     border: none;
     transition: 250ms ease-in-out;
+    background-color: var(--imagebg);
+    border-radius: 20%;
+    margin-left: 5px;
 }
 
 img:hover {
@@ -106,6 +147,10 @@ nav {
     position: absolute;
     left: 2vw;
     top: 2vh;
+}
+
+nav h1 {
+    color: var(--themes-head);
 }
 
 #themes {

@@ -80,32 +80,32 @@ function hide() {
 }
 
 document.querySelector("#space").addEventListener('click', () => {
-    document.body.classList.remove("forest", "ocean", "flower");
+    document.body.classList.remove("forest", "sunset", "flower");
     document.body.classList.add('space');
-    document.body.style.backgroundImage = "url('images/icegif-763.gif')";
+    document.body.style.backgroundImage = "url('images/space.jpg')";
 })
 
 document.querySelector("#forest").addEventListener('click', () => {
-    document.body.classList.remove("flower", "space", "ocean");
+    document.body.classList.remove("flower", "space", "sunset");
     document.body.classList.add('forest');
     document.body.style.backgroundImage = "url('')";
 
 })
 
-document.querySelector("#ocean").addEventListener('click', () => {
+document.querySelector("#sunset").addEventListener('click', () => {
     document.body.classList.remove("forest", "flower", "space");
-    document.body.classList.add('ocean');
-    document.body.style.backgroundImage = "url('')";
+    document.body.classList.add('sunset');
+    document.body.style.backgroundImage = "url('images/sunset.gif')";
 })
 
 document.querySelector("#flower").addEventListener('click', () => {
-    document.body.classList.remove("space", "ocean", "forest");
+    document.body.classList.remove("space", "sunset", "forest");
     document.body.classList.add('flower');
     document.body.style.backgroundImage = "url('')";
 })
 
 document.querySelector("#dark").addEventListener('click', () => {
-    document.body.classList.remove("forest","space","ocean","flower");
+    document.body.classList.remove("forest","space","sunset","flower");
     document.body.style.backgroundImage = "url('images/black.jpg')";
 
 })
