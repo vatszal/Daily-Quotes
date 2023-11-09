@@ -101,7 +101,7 @@ document.querySelector("#sunset").addEventListener('click', () => {
 document.querySelector("#bubblegum").addEventListener('click', () => {
     document.body.classList.remove("space", "sunset", "aurora");
     document.body.classList.add('bubblegum');
-    document.body.style.backgroundImage = "url('images/flower.jpg')";
+    document.body.style.backgroundImage = "url('images/bubblegum.jpg')";
 })
 
 document.querySelector("#dark").addEventListener('click', () => {
