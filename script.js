@@ -82,7 +82,7 @@ function hide() {
 document.querySelector("#space").addEventListener('click', () => {
     document.body.classList.remove("forest", "ocean", "flower");
     document.body.classList.add('space');
-    document.body.style.backgroundImage = "url('')";
+    document.body.style.backgroundImage = "url('images/icegif-763.gif')";
 })
 
 document.querySelector("#forest").addEventListener('click', () => {
