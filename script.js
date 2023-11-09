@@ -80,32 +80,32 @@ function hide() {
 }
 
 document.querySelector("#space").addEventListener('click', () => {
-    document.body.classList.remove("forest", "sunset", "flower");
+    document.body.classList.remove("aurora", "sunset", "bubblegum");
     document.body.classList.add('space');
     document.body.style.backgroundImage = "url('images/space.jpg')";
 })
 
-document.querySelector("#forest").addEventListener('click', () => {
-    document.body.classList.remove("flower", "space", "sunset");
-    document.body.classList.add('forest');
-    document.body.style.backgroundImage = "url('')";
+document.querySelector("#aurora").addEventListener('click', () => {
+    document.body.classList.remove("bubblegum", "space", "sunset");
+    document.body.classList.add('aurora');
+    document.body.style.backgroundImage = "url('images/aurora.jpg')";
 
 })
 
 document.querySelector("#sunset").addEventListener('click', () => {
-    document.body.classList.remove("forest", "flower", "space");
+    document.body.classList.remove("aurora", "bubblegum", "space");
     document.body.classList.add('sunset');
     document.body.style.backgroundImage = "url('images/sunset.gif')";
 })
 
-document.querySelector("#flower").addEventListener('click', () => {
-    document.body.classList.remove("space", "sunset", "forest");
-    document.body.classList.add('flower');
-    document.body.style.backgroundImage = "url('')";
+document.querySelector("#bubblegum").addEventListener('click', () => {
+    document.body.classList.remove("space", "sunset", "aurora");
+    document.body.classList.add('bubblegum');
+    document.body.style.backgroundImage = "url('images/flower.jpg')";
 })
 
 document.querySelector("#dark").addEventListener('click', () => {
-    document.body.classList.remove("forest","space","sunset","flower");
+    document.body.classList.remove("aurora", "space", "sunset", "bubblegum");
     document.body.style.backgroundImage = "url('images/black.jpg')";
 
 })
