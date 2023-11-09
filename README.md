@@ -1,2 +1,2 @@
 # Daily-Quotes
-A javascript extension which shows an inspirational quote on the new tab of chromium based browsers and updates every 24 hours
+A chromium based extension(written in JS) which have 5 different themes and shows a 'quote of the day' every 24 hours

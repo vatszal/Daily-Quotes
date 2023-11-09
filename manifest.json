@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Quote of the Day",
+    "name": "Daily Quotes",
     "author": "Nijjil Narula & Vatsal Mittal",
     "version": "1.0",
     "description": "Displays a daily inspirational or thought-provoking quote on the new tab page.",
