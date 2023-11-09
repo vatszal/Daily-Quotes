@@ -11,10 +11,11 @@
     --clockcolor: black;
 }
 
-.light {
+.space {
     --font-size: calc(6px + 1.4vw);
     --qtcolor: green;
     --clockcolor: black;
+    
 }
 
 .forest {

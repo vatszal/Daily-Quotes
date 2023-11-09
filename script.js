@@ -79,33 +79,33 @@ function hide() {
     themes.style.visibility = "hidden";
 }
 
-document.querySelector("#light").addEventListener('click', () => {
+document.querySelector("#space").addEventListener('click', () => {
     document.body.classList.remove("forest", "ocean", "flower");
-    document.body.classList.add('light');
+    document.body.classList.add('space');
     document.body.style.backgroundImage = "url('')";
 })
 
 document.querySelector("#forest").addEventListener('click', () => {
-    document.body.classList.remove("flower", "light", "ocean");
+    document.body.classList.remove("flower", "space", "ocean");
     document.body.classList.add('forest');
     document.body.style.backgroundImage = "url('')";
 
 })
 
 document.querySelector("#ocean").addEventListener('click', () => {
-    document.body.classList.remove("forest", "flower", "light");
+    document.body.classList.remove("forest", "flower", "space");
     document.body.classList.add('ocean');
     document.body.style.backgroundImage = "url('')";
 })
 
 document.querySelector("#flower").addEventListener('click', () => {
-    document.body.classList.remove("light", "ocean", "forest");
+    document.body.classList.remove("space", "ocean", "forest");
     document.body.classList.add('flower');
     document.body.style.backgroundImage = "url('')";
 })
 
 document.querySelector("#dark").addEventListener('click', () => {
-    document.body.classList.remove("forest","light","ocean","flower");
+    document.body.classList.remove("forest","space","ocean","flower");
     document.body.style.backgroundImage = "url('images/black.jpg')";
 
 })
