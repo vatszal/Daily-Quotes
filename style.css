@@ -63,7 +63,8 @@ body{
     height:5vh ;
     width: 6vh;
     border: none;
-    transform: scaleX(-1);
+    transform: rotate(270deg);
+ 
 }
 .navbar{
     margin: 0%;
@@ -72,9 +73,12 @@ body{
     display: flex;
     width: 208vh;
     height: 6vh;
+   
 }
 #btn{
     border: none;
+
+
 }
 
 #theme{
@@ -86,15 +90,13 @@ body{
     visibility: hidden;
     border-color: #e3e3e3;
     border-style: double;
-    border-width: 10px;
+    border-width: 2vh;
 }
     
 
 
 button{
-    border-left:#e3e3e3 10px double;
-    border-right:black 10px double;
+    border-left:#e3e3e3 5vh double;
+    border-right:black 4vh double;
 }
-#btn :hover{
 
-}

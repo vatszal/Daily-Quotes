@@ -65,4 +65,5 @@ let button =document.getElementById("btn");
 button.addEventListener("mouseover",themeshow);
 function themeshow(){
     document.getElementById("theme").style.visibility="visible";
+button.style.transform="rotate(-90deg)";
 }
